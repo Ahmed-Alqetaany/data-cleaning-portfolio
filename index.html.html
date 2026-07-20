@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Farrag - Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #05050A;
+            color: #F8FAFC;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 240, 255, 0.15);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .glass-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0, 240, 255, 0.2);
+            border-color: rgba(0, 240, 255, 0.4);
+        }
+        .neon-accent {
+            color: #00F0FF;
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, #00F0FF, #A855F7);
+            height: 100%;
+            border-radius: 999px;
+        }
+        .contact-btn {
+            background: linear-gradient(90deg, #00F0FF, #A855F7);
+            transition: opacity 0.3s ease;
+        }
+        .contact-btn:hover {
+            opacity: 0.8;
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen p-4 md:p-8 text-sm md:text-base">
+
+    <div class="max-w-6xl mx-auto space-y-10">
+        
+        <!-- Hero Section -->
+        <header class="glass-panel flex flex-col md:flex-row items-center gap-6">
+            <div class="w-32 h-32 rounded-full border-2 border-[#00F0FF] shadow-[0_0_15px_rgba(0,240,255,0.4)] overflow-hidden shrink-0">
+                <img src="my_photo.png" alt="Ahmed Farrag" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200/0f172a/00F0FF?text=Photo'">
+            </div>
+            
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-bold mb-2">Hello, I'm <span class="neon-accent">Ahmed Farrag</span></h1>
+                <h2 class="text-lg md:text-xl text-gray-400 font-light">Data Cleaning Specialist & Advanced Excel Analyst</h2>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="glass-panel">
+            <h3 class="text-xl font-semibold mb-3 border-b border-gray-700 pb-2">About Me</h3>
+            <p class="text-gray-300 leading-relaxed">
+                I am a Biotechnology and Bioinformatics student with a meticulous eye for detail. I specialize in transforming messy, raw datasets into clean, analysis-ready formats. By leveraging advanced Excel capabilities—such as Power Query, Pivot Tables, XLOOKUP, and complex logical functions—I efficiently clean, merge, and organize business data without the need for traditional programming. My scientific background ensures high accuracy and a structured approach to every dataset I handle.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="glass-panel">
+            <h3 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">Technical Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <div class="flex justify-between mb-1 text-sm"><span>Data Cleaning & Formatting</span><span class="neon-accent">95%</span></div>
+                    <div class="w-full bg-gray-800 rounded-full h-1.5"><div class="progress-bar" style="width: 95%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1 text-sm"><span>Advanced Excel (Formulas)</span><span class="neon-accent">90%</span></div>
+                    <div class="w-full bg-gray-800 rounded-full h-1.5"><div class="progress-bar" style="width: 90%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1 text-sm"><span>Power Query</span><span class="neon-accent">85%</span></div>
+                    <div class="w-full bg-gray-800 rounded-full h-1.5"><div class="progress-bar" style="width: 85%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1 text-sm"><span>Pivot Tables & Summarization</span><span class="neon-accent">85%</span></div>
+                    <div class="w-full bg-gray-800 rounded-full h-1.5"><div class="progress-bar" style="width: 85%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="space-y-6">
+            <h3 class="text-2xl font-bold mb-4 text-center border-b border-gray-700 pb-2 inline-block mx-auto">Featured Projects</h3>
+            
+            <!-- Project 1: Global Sales -->
+            <div class="glass-panel space-y-6">
+                <h4 class="text-lg font-bold neon-accent border-b border-gray-800 pb-2">Case Study 1: Global Sales Data Cleanup</h4>
+                
+                <!-- The Problem (Before) -->
+                <div class="flex flex-col lg:flex-row gap-6 items-center bg-gray-900/50 p-4 rounded-lg">
+                    <div class="w-full lg:w-3/5">
+                        <img src="proj1_before.png" alt="Before: Messy Data" class="rounded border border-red-900 shadow-md w-full object-cover" onerror="this.src='https://placehold.co/600x300/2a0f0f/ff4444?text=Before:+Messy+Data'">
+                    </div>
+                    <div class="w-full lg:w-2/5">
+                        <h5 class="font-bold text-red-400 mb-2 flex items-center gap-2"><span>❌</span> The Problem</h5>
+                        <p class="text-gray-300 text-sm">Disorganized raw data with unreadable serial dates, width errors ('###'), and critical spelling inconsistencies (e.g., 'GERMA').</p>
+                    </div>
+                </div>
+
+                <!-- The Solution (After with 2 bigger images) -->
+                <div class="flex flex-col lg:flex-row gap-6 items-center bg-gray-900/50 p-4 rounded-lg">
+                    <div class="w-full lg:w-3/5 flex flex-col sm:flex-row gap-3">
+                        <img src="proj1_after1.png" alt="After: Clean Data" class="rounded border border-green-900 shadow-md w-full sm:w-1/2 object-cover" onerror="this.src='https://placehold.co/300x300/0f2a15/44ff44?text=Clean+Data'">
+                        <img src="proj1_after2.png" alt="After: Pivot Table" class="rounded border border-green-900 shadow-md w-full sm:w-1/2 object-cover" onerror="this.src='https://placehold.co/300x300/0f2a15/44ff44?text=Pivot+Table'">
+                    </div>
+                    <div class="w-full lg:w-2/5">
+                        <h5 class="font-bold text-green-400 mb-2 flex items-center gap-2"><span>✅</span> Solution & Impact</h5>
+                        <p class="text-gray-300 text-sm">Applied Power Query to reformat dates and standardize names. Delivered a 100% clean dataset and built an interactive Pivot Chart visualizing gross sales across 5 countries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: HR Records -->
+            <div class="glass-panel space-y-6">
+                <h4 class="text-lg font-bold neon-accent border-b border-gray-800 pb-2">Case Study 2: HR Records Standardization</h4>
+                
+                <!-- The Problem (Before) -->
+                <div class="flex flex-col lg:flex-row gap-6 items-center bg-gray-900/50 p-4 rounded-lg">
+                    <div class="w-full lg:w-3/5">
+                        <img src="proj2_before.png" alt="Before: Text Dump" class="rounded border border-red-900 shadow-md w-full object-cover" onerror="this.src='https://placehold.co/600x300/2a0f0f/ff4444?text=Before:+Text+Dump'">
+                    </div>
+                    <div class="w-full lg:w-2/5">
+                        <h5 class="font-bold text-red-400 mb-2 flex items-center gap-2"><span>❌</span> The Problem</h5>
+                        <p class="text-gray-300 text-sm">Dataset exported as a messy, semicolon-delimited string with reversed names, erratic spaces, and entirely uppercase text.</p>
+                    </div>
+                </div>
+
+                <!-- The Solution (After) -->
+                <div class="flex flex-col lg:flex-row gap-6 items-center bg-gray-900/50 p-4 rounded-lg">
+                    <div class="w-full lg:w-3/5">
+                        <img src="proj2_after.png" alt="After: Clean Columns" class="rounded border border-green-900 shadow-md w-full object-cover" onerror="this.src='https://placehold.co/600x300/0f2a15/44ff44?text=After:+Structured+Table'">
+                    </div>
+                    <div class="w-full lg:w-2/5">
+                        <h5 class="font-bold text-green-400 mb-2 flex items-center gap-2"><span>✅</span> Solution & Impact</h5>
+                        <p class="text-gray-300 text-sm">Used 'Text-to-Columns', TRIM(), and PROPER() to clean formatting. Converted the unreadable dump into a structured Excel Table ready for HR analysis.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="glass-panel text-center space-y-4">
+            <h3 class="text-xl font-bold">Let's Collaborate</h3>
+            <p class="text-gray-300 text-sm">Ready to transform your messy data into actionable insights? Let's discuss how I can help.</p>
+            <a href="mailto:your.email@example.com" class="contact-btn inline-block px-6 py-2 rounded-full text-white font-bold text-sm cursor-pointer mt-2">
+                Get In Touch
+            </a>
+        </section>
+
+    </div>
+
+</body>
+</html>
